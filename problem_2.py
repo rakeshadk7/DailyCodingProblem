@@ -30,18 +30,22 @@ def bonus_product_except_i(lst):
     post_products = []
     results = []
 
-    for num in lst:
+    for i in range(0, len(lst)):
         if prior_products:
-            prior_products.append(prior_products[-1] * num)
+            prior_products.append(prior_products[-1] * lst[i-1])
         else:
-            prior_products.append(num)
+            prior_products.append(1)
 
-    for num in reversed(lst):
+    for i in range(len(lst), 0,-1):
         if post_products:
-            post_products.append(post_products[-1] * num)
+            post_products.append(post_products[-1] * lst[i])
         else:
-            post_products.append(num)
+            post_products.append(1)
     post_products = list(reversed(post_products))
+
+    for i in range(len(lst)):
+        prod = prior_products[i] * post_products[i]
+        results.append(prod)
 
     return results
 
