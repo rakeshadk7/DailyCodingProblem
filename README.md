@@ -2,7 +2,7 @@
 
 
 
-### [Problem 1](https://github.com/rakeshadk7/DailyCodingProblem/blob/master/problem%201.py)
+### [Problem 1](https://github.com/rakeshadk7/DailyCodingProblem/blob/master/problem_1.py)
 
 ##### Given a list of numbers and a number k, return whether any two numbers from the list add up to k. 
 
@@ -12,7 +12,7 @@ Bonus: Can you do this in one pass?
 
 
 
-### Problem 2
+### [Problem 2](https://github.com/rakeshadk7/DailyCodingProblem/blob/master/problem_2.py)
 
 This problem was asked by Uber.
 
